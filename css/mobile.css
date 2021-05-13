@@ -12,4 +12,24 @@
     letter-spacing: 3px;
     line-height: 2.5rem;
   }
+
+  /* ===== WHAT WE DO ===== */
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .boxes div {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
