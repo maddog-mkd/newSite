@@ -1,0 +1,15 @@
+@media screen and (max-width: 540px) {
+  .showcase .showcase-content {
+    padding: 0 15px;
+  }
+
+  .showcase .showcase-content h1 {
+    font-size: 1rem;
+  }
+
+  .showcase .showcase-content h2 {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    line-height: 2.5rem;
+  }
+}
