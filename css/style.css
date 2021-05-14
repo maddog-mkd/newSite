@@ -1,9 +1,10 @@
 :root {
-  --gradient-color: linear-gradient(
-    to right bottom,
-    rgba(255, 119, 48, 0.8),
-    rgba(255, 185, 0, 0.8)
-  );
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #313131;
+  --yellow: #ffff00;
+  --red: #e50000;
+  --modal-duration: 1s;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: black;
+  background-color: var(--black);
 }
 
 img {
@@ -34,19 +35,19 @@ a {
 }
 
 .special-1 {
-  color: yellow;
+  color: var(--yellow);
 }
 
 .special-2 {
-  color: red;
+  color: var(--red);
 }
 
 .btn-light {
   display: inline-block;
   font-size: 1rem;
-  background-color: white;
+  background-color: var(--white);
   padding: 10px 30px;
-  color: black;
+  color: var(--black);
   margin-top: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -61,9 +62,9 @@ a {
 .btn-dark {
   display: inline-block;
   font-size: 1rem;
-  background-color: black;
+  background-color: var(--black);
   padding: 10px 30px;
-  color: white;
+  color: var(--white);
   margin-top: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -79,7 +80,7 @@ a {
 .navbar {
   width: 300px;
   height: 80vh;
-  background-color: #3a3a3a;
+  background-color: var(--grey);
   position: fixed;
   top: 0;
   right: -300px;
@@ -98,7 +99,7 @@ a {
 .hamburger-menu {
   width: 60px;
   height: 60px;
-  background-color: #3a3a3a;
+  background-color: var(--grey);
   position: fixed;
   top: 30px;
   right: 30px;
@@ -113,7 +114,7 @@ a {
 .line {
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: var(--white);
   transition: all 0.8s;
 }
 
@@ -139,7 +140,7 @@ a {
 }
 
 .nav-link {
-  color: white;
+  color: var(--white);
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -148,7 +149,7 @@ a {
 }
 
 .nav-link:hover {
-  color: yellow;
+  color: var(--yellow);
   letter-spacing: 3px;
   transition: all 0.2s ease-in-out;
 }
@@ -186,7 +187,7 @@ a {
 
 .showcase .showcase-content {
   position: relative;
-  color: white;
+  color: var(--white);
   padding: 0 100px;
 }
 
@@ -218,9 +219,9 @@ a {
 .btn-light-hero {
   display: inline-block;
   font-size: 1rem;
-  background-color: white;
+  background-color: var(--white);
   padding: 10px 30px;
-  color: black;
+  color: var(--black);
   margin-top: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -278,8 +279,8 @@ a {
 }
 
 .wrap .box {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   padding: 100px 20px;
   width: 100%;
   transform: translateX(400%);
@@ -288,8 +289,8 @@ a {
 
 .box:nth-of-type(even) {
   transform: translateX(-400%);
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .box.show {
@@ -402,7 +403,6 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: red;
 }
 
 .card:hover .back-side {
@@ -412,8 +412,8 @@ a {
 
 /* ========== TESTIMONIALS ========== */
 .testimonial-container {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border-radius: 15px;
   padding: 50px 80px;
   margin: 20px auto;
@@ -467,7 +467,7 @@ a {
 }
 
 .progress-bar {
-  background-color: white;
+  background-color: var(--white);
   height: 4px;
   width: 100%;
   animation: grow 30s linear infinite;
@@ -497,16 +497,16 @@ a {
 .map-contact-wrap .contact-form .input-field {
   margin: 10px 0;
   padding: 10px;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border: none;
   outline: none;
   font-size: 18px;
 }
 
 .map-contact-wrap .contact-form .message-field {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border: none;
   outline: none;
   font-size: 18px;
@@ -521,10 +521,95 @@ a {
 
 /* ========== FOOTER ========== */
 .footer {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ========== MODAL ========== */
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 350px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  border-bottom: 3px solid var(--red);
+  text-transform: uppercase;
+}
+
+.modal-content {
+  padding: 10px;
+}
+
+.modal-form div {
+  margin: 15px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form .form-input,
+.modal-form .form-textarea {
+  padding: 8px;
+  width: 100%;
+  background-color: var(--grey);
+  border: none;
+  color: var(--white);
+}
+
+.close-btn {
+  background-color: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: var(--white);
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
