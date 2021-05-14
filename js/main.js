@@ -81,3 +81,7 @@ function updateTestimonial() {
 }
 
 setInterval(updateTestimonial, 30000)
+
+
+
+

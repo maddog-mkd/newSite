@@ -1,3 +1,11 @@
+:root {
+  --gradient-color: linear-gradient(
+    to right bottom,
+    rgba(255, 119, 48, 0.8),
+    rgba(255, 185, 0, 0.8)
+  );
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,9 +51,27 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.2s;
+  border: none;
 }
 
 .btn-light:hover {
+  letter-spacing: 6px;
+}
+
+.btn-dark {
+  display: inline-block;
+  font-size: 1rem;
+  background-color: black;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  border: none;
+}
+
+.btn-dark:hover {
   letter-spacing: 6px;
 }
 
@@ -316,8 +342,8 @@ a {
   justify-content: center;
 }
 .card {
-  width: 360px;
-  height: 560px;
+  width: 250px;
+  height: 450px;
   position: relative;
   perspective: 1000px;
 }
@@ -452,6 +478,43 @@ a {
   0% {
     transform: scaleX(0);
   }
+}
+
+/* ========== CONTACT ========== */
+.map-contact-wrap {
+  display: flex;
+}
+
+.map-contact-wrap .contact-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.map-contact-wrap .contact-form .input-field {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.map-contact-wrap .contact-form .message-field {
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.map-contact-wrap .map {
+  flex: 1;
+  width: 100%;
+  margin-left: 10px;
 }
 
 /* ========== FOOTER ========== */
