@@ -230,6 +230,8 @@ a {
   animation-duration: 1s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
+  border: none;
+  outline: none;
 }
 
 .btn-light-hero:hover {
@@ -521,6 +523,7 @@ a {
 
 /* ========== FOOTER ========== */
 .footer {
+  font-size: 12px;
   background-color: var(--black);
   color: var(--white);
   height: 100px;
@@ -538,6 +541,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 15;
 }
 
 .modal-container.show-modal {
