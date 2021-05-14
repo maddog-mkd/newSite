@@ -483,6 +483,8 @@ a {
 /* ========== CONTACT ========== */
 .map-contact-wrap {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .map-contact-wrap .contact-form {

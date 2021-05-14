@@ -42,13 +42,16 @@
     display: none;
   }
 
-  /*  */
+  /* ===== CONTACT ===== */
   .map-contact-wrap {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .map-contact-wrap .map {
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
   }
 }
