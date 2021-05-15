@@ -199,7 +199,7 @@ a {
   letter-spacing: 3px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 3.5rem;
+  line-height: 1;
   animation-name: moveToRight;
   animation-duration: 2s;
 }
@@ -277,7 +277,7 @@ a {
 .wrap .box {
   background-color: var(--black);
   color: var(--white);
-  padding: 100px 0;
+  padding: 100px 10px;
   width: 100%;
   transform: translateX(400%);
   transition: transform 1s ease;
@@ -314,7 +314,7 @@ a {
 
 .wrap .box h3 {
   text-align: center;
-  margin: 0 auto 2rem;
+  margin: 10px auto;
   text-transform: uppercase;
   max-width: 700px;
 }
@@ -357,6 +357,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 .card {
   width: 250px;
@@ -428,8 +429,8 @@ a {
 
 /* ========== TESTIMONIALS ========== */
 .testimonial-container {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 15px;
   padding: 50px 80px;
   margin: 20px auto;
@@ -468,25 +469,20 @@ a {
 }
 
 .user .user-details {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .user .username {
   text-transform: capitalize;
   margin: 0;
-}
-
-.user .role {
-  text-transform: capitalize;
-  font-weight: normal;
-  margin: 10px 0;
+  padding: 0;
 }
 
 .progress-bar {
-  background-color: var(--white);
+  background-color: var(--purple);
   height: 4px;
   width: 100%;
-  animation: grow 30s linear infinite;
+  animation: grow 10s linear infinite;
   transform-origin: left;
 }
 
@@ -501,6 +497,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .map-contact-wrap .contact-form {
@@ -513,16 +510,16 @@ a {
 .map-contact-wrap .contact-form .input-field {
   margin: 10px 0;
   padding: 10px;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
   border: none;
   outline: none;
   font-size: 18px;
 }
 
 .map-contact-wrap .contact-form .message-field {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
   border: none;
   outline: none;
   font-size: 18px;
@@ -599,12 +596,16 @@ a {
 
 .modal-header h3 {
   margin: 0;
-  border-bottom: 3px solid var(--red);
+  border-bottom: 3px solid var(--purple);
   text-transform: uppercase;
 }
 
 .modal-content {
   padding: 10px;
+}
+
+.modal-content p {
+  font-size: 12px;
 }
 
 .modal-form div {
@@ -614,6 +615,8 @@ a {
 .modal-form label {
   display: block;
   margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .modal-form .form-input,
@@ -635,4 +638,20 @@ a {
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+/* ====================================================== */
+
+/* ABOUT PAGE ========== */
+.about-page {
+  text-align: center;
+  color: var(--white);
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.about-page h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
