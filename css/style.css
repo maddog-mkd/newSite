@@ -2,8 +2,7 @@
   --white: #ffffff;
   --black: #000000;
   --grey: #313131;
-  --yellow: #ffff00;
-  --red: #e50000;
+  --purple: #d400d4;
   --modal-duration: 1s;
 }
 
@@ -35,11 +34,7 @@ a {
 }
 
 .special-1 {
-  color: var(--yellow);
-}
-
-.special-2 {
-  color: var(--red);
+  color: var(--purple);
 }
 
 .btn-light {
@@ -149,7 +144,7 @@ a {
 }
 
 .nav-link:hover {
-  color: var(--yellow);
+  color: var(--purple);
   letter-spacing: 3px;
   transition: all 0.2s ease-in-out;
 }
@@ -315,6 +310,13 @@ a {
   text-transform: uppercase;
   padding: 20px 10px;
   text-align: center;
+}
+
+.wrap .box h3 {
+  text-align: center;
+  margin: 0 auto 2rem;
+  text-transform: uppercase;
+  max-width: 700px;
 }
 
 .wrap .box h4 {
@@ -528,8 +530,8 @@ a {
 }
 
 .map-contact-wrap .contact-form .bt {
-  width: 50%;
-  margin: 10px auto;
+  width: 40%;
+  margin: 15px auto;
 }
 
 .map-contact-wrap .map {
